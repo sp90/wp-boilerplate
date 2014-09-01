@@ -1,0 +1,27 @@
+
+$fs--h1         : 50px !default;
+$fs--h2       	: 24px !default;
+$fs--h3       	: 18px !default;
+$fs--h4       	: 15px !default;
+$fs--h5       	: 12px !default;
+$fs--h6       	: 11px !default;
+
+$fs--big		: 18px !default;
+$fs--p   		: 14px !default;
+$fs--small      : 12px !default;
+$fs--tiny      	: 11px !default;
+
+// define other line heights besides this auto generated
+
+$ff--fallback: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
+$ff--bariol: 'bariol' !default;
+
+// if multiple font familys set them here with the ff--fontname
+
+//
+// Custom font mixin - for default usage of font styling
+//
+@mixin font($size: $fs--p, $weight: normal, $family: $ff--bariol){
+  $line-height--ratio: $size + 2;
+  font: $weight #{$size}/#{$line-height--ratio} #{$family};
+}

@@ -1,0 +1,42 @@
+/*/
+	1. Bold (font-weight: 600;)
+	2. Regular (font-weight: 400;)
+	3. Light (font-weight: 200;)
+	4. Thin (font-weight: 100;)
+
+
+	$fontpath is the path to the font dir
+	$familyname is the font-family name you call 
+	with the different weights which is stated above
+/*/
+@mixin font-face($fontpath, $familyname, $filename, $weight: 400, $style: normal){
+	@font-face {
+	    font-family: '#{$familyname}';
+	    src: url('#{$fontpath}#{$filename}.eot?');
+	    src: url('#{$fontpath}#{$filename}.eot?#iefix') format('embedded-opentype'), 
+		     url('#{$fontpath}#{$filename}.woff?') format('woff'), 
+		     url('#{$fontpath}#{$filename}.ttf?') format('truetype'), 
+		     url('#{$fontpath}#{$filename}.svg?') format('svg');
+	    font-weight: $weight;
+	    font-style: $style;
+	}
+}
+
+$fontFolderPath: '../fonts/';
+$bariol: bariol;
+
+//1. Bold (font-weight: 600;)
+@include font-face($fontFolderPath, $bariol, Bariol-Bold, 600, normal);
+@include font-face($fontFolderPath, $bariol, Bariol_Regular_Italic, 600, italic);
+ 
+//2. Regular (font-weight: 400;)
+@include font-face($fontFolderPath, $bariol, Bariol_Regular, 400, normal);
+@include font-face($fontFolderPath, $bariol, Bariol_Regular_Italic, 400, italic);
+
+//3. Light (font-weight: 200;)
+@include font-face($fontFolderPath, $bariol, Bariol-Light, 200, normal);
+@include font-face($fontFolderPath, $bariol, Bariol-Light-Italic, 200, italic);
+
+//4. Thin (font-weight: 100;)
+@include font-face($fontFolderPath, $bariol, Bariol-Thin, 100, normal);
+@include font-face($fontFolderPath, $bariol, Bariol-Thin-Italic, 100, italic);

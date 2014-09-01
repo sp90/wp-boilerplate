@@ -1,0 +1,8 @@
+form[role="search"] {
+	div{
+		position: relative;
+		.screen-reader-text {
+			display: none;
+		}
+	}
+} 

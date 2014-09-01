@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+
+/*
+ * Primary Color
+ *
+ */
+$primeC           : #202020;
+$primeC--active   : darken($primeC, 30%);
+$primeC--hover    : darken($primeC, 20%);
+
+
+
+/*
+ * Secondary Color
+ *
+ */
+$secC             : #aaa;
+$secC--active     : darken($secC, 30%);
+$secC--hover      : darken($secC, 20%);
+
+
+
+/*
+ * Link Color
+ *
+ */
+$linkC             : #477DCA;
+$linkC--active     : darken($linkC, 30%);
+$linkC--hover      : darken($linkC, 20%);

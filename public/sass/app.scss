@@ -1,0 +1,50 @@
+/*/ 
+    Setup:
+    	1: Libraries
+        2: Import of settings and variables
+        3: Atoms
+        4: Molecules
+        5: Organisms
+        6: Templates
+/*/
+
+/*/
+    1: Libraries
+/*/
+	@import "libs/bourbon/bourbon";
+	@import "libs/neat/neat";
+	@import "libs/bitters/bitters";
+
+/*/
+    2: Settings, mixins & global variables
+/*/
+    @import "utilities/font-stack";
+	@import "utilities/variables/colors";
+	@import "utilities/variables/defaults";
+    @import "utilities/variables/spacings";
+    @import "utilities/mixins";
+
+/*/
+    3: Atoms
+/*/
+    @import "atoms/document";
+    @import "atoms/text";
+    @import "atoms/forms";
+/*/
+    4: Molecules
+/*/
+    @import "molecules/forms";
+
+/*/
+    5: Organisms
+/*/
+    @import "organisms/header"; 
+    @import "organisms/sections";
+    @import "organisms/nav";
+    @import "organisms/footer";
+
+/*/
+    6: Templates
+/*/
+    @import "templates/single";
+

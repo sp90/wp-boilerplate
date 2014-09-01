@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    $BASE-SPACING
+    su = spacing unit
+\*------------------------------------*/
+
+$su            : 20px               !default;
+// Less
+$su--half      : $su / 2  !default;
+$su--quarter   : $su / 4  !default;
+
+// More
+$su--double    : $su * 2;
+$su--triple    : $su * 3;

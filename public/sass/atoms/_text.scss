@@ -1,0 +1,73 @@
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-weight: bold;
+	margin: 0 0 0.75em;
+}
+
+h1,.h1 {
+	@include font($fs--h1, bold);
+}
+h2,.h2 {
+	@include font($fs--h2, bold);
+}
+h3,.h3 {
+	@include font($fs--h3, bold);
+}
+h4,.h4 {
+	@include font($fs--h4, bold);
+}
+h5,.h5 {
+	@include font($fs--h5, bold);
+}
+h6,.h6 {
+	@include font($fs--h6, bold);
+}
+
+p {
+	font-size: $fs--p;
+	&.i {
+		font-style: italic;
+	}	
+	&.s { 
+		font-weight: bold;
+	}
+}
+
+a {
+  color: $linkC;
+  text-decoration: none;
+  @include transition(color 0.1s linear);
+
+  &:hover {
+    color: $linkC--hover;
+  }
+
+  &:active, &:focus {
+    color: $linkC--active;
+    outline: none;
+  }
+}
+
+blockquote {
+	font-size: $fs--h3;
+	text-transform: uppercase;
+	margin: 20px 10px;
+	&:before {
+		display: inline-block;
+	}
+	&:after {
+		display: inline-block;
+	}
+}
+
+strong {
+	font-size: $fs--p;
+	font-weight: bold;
+}
+em {
+	font-size: $fs--p;
+	font-style: italic; 
+}
+sub, sup {
+	font-size: $fs--small;
+}
