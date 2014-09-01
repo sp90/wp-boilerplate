@@ -2,8 +2,13 @@
     "name": "SassGruntWordpress",
     "version": "0.1.1",
     "description": "A sass and grunt wordpress theme with preprocessing",
+    "author": "Simon Petersen github.com/sp90 - contact@nomis.dk",
     "scripts": {
         "sass": "sass --watch public/sass/app.scss:style.css"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/sp90/wp-boilerplate"
     },
     "devDependencies": {
         "grunt": "~0.4.5",
